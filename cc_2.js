@@ -5,6 +5,7 @@ prices.shift();//Removed the first price from the array
 
 console.log('Prices', prices); //Logged the updated price list to the console
 
+
 // Task 2: Modifying Customer Orders Scenario
 let orders = [10,20,30,40,50];// Declared  array orders with  five numerical values
 orders[2] +=5;// Increased the third order by 5
@@ -12,6 +13,7 @@ let total_orders = orders.reduce((total,number) => total + number, 0); //sums al
 
 console.log(orders);//Logged the updated array. 
 console.log(total_orders); // logged the total order count to the console.
+
 
 //Task 3: Employee Performance Tracking Scenario
 let employee ={
@@ -26,6 +28,7 @@ employee.performanceScore = 10; //Updated the performanceScore property.
 employee.promotionEligible = true; //Added a new property promotionEligible with a boolean value
 
 console.log(employee); //Logged the updated employee object to the console.
+
 
 //Task 4: Customer Feedback Records Scenario
 let feedback = [
@@ -54,3 +57,18 @@ feedback.push(
 ); //Added a new feedback object to the array
 
 console.log(feedback);  // Logged the feedback list to the console.
+
+
+//Task 5: Inventory Management System Scenario
+let inventory = {
+    itemName: 'cap',
+    stockCount: 20,
+    price: 20
+}; //Declared  an object inventory 
+
+inventory.calculateTotalValue = function(){
+    return this.stockCount*this.price
+}; //Added a method calculateTotalValue that returns the total value (stockCount * price)
+
+console.log(inventory); //Logged the inventory details to the console
+console.log(inventory.calculateTotalValue()); //Logged total value to the console
