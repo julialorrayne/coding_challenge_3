@@ -23,6 +23,34 @@ let employee ={
 
 employee.performanceScore = 10; //Updated the performanceScore property.
 
-employee.promotionEligible = true //Added a new property promotionEligible with a boolean value
+employee.promotionEligible = true; //Added a new property promotionEligible with a boolean value
 
 console.log(employee); //Logged the updated employee object to the console.
+
+//Task 4: Customer Feedback Records Scenario
+let feedback = [
+    {
+        customerName: 'Alex',
+        feedbackText: 'Excellent service',
+        rating: 10
+    },
+    {
+        customerName: 'Henry',
+        feedbackText: 'Nice Ambiance',
+        rating: 9
+    },
+    {
+        customerName: 'Maria',
+        feedbackText: 'Poor food quality',
+        rating: 5
+    }
+]; //Declared an array feedback containing three objects
+feedback.push(
+    {
+        customerName: 'Erika',
+        feedbackText: 'Awesome view',
+        rating: 9.5
+    }
+); //Added a new feedback object to the array
+
+console.log(feedback);  // Logged the feedback list to the console.
